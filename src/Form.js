@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Form.css';
 
 function Form(props) {
+  const { write, review, size, setSize } = props;
 
   return (
     <div className="form">
@@ -9,8 +10,9 @@ function Form(props) {
       <textarea className="form-textarea"
         name="feedback"
         rows="4"
-        onChange={console.log("feedback changed")}
+        onChange={(e) => {write(e.target.value)}}
         placeholder="Let us know what we did well or could improve..."
+        value={review}
       />
 
       <label className="form-label">How many in your party?</label>
@@ -18,8 +20,9 @@ function Form(props) {
         type="number"
         name="party"
         min="1"
-        onChange={console.log('party changed')}
+        onChange={(e) => {setSize(e.target.value)}}
         placeholder="2"
+        value={size}
       />
 
       <label className="form-label">How was your meal?</label>

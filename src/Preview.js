@@ -2,7 +2,7 @@ import React from 'react';
 import './Preview.css';
 
 function Preview(props) {
-  const { review, size } = props;
+  const { feedback, party } = props;
   return (
     <section className="preview">
       <div className="preview-label">Preview of your review</div>
@@ -16,11 +16,11 @@ function Preview(props) {
         <div className="preview-feedback">
           Let us know what we did well or could improve...
           <div>
-            {review}
+            {feedback}
           </div>
         </div>
         <div className="preview-party">
-         {size} people dined here.
+         {party} people dined here.
         </div>
       </div>
     </section>

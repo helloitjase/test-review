@@ -4,23 +4,45 @@ import Header from './Header.js';
 import Form from './Form.js';
 import Preview from './Preview.js';
 
-function App() {
-  const [review, writeReview] = useState('');
-  const [size, setSize] = useState(0);
-  return (
-    <div className="app">
-      <Header />
+// function App() {
+//   const [review, writeReview] = useState('');
+//   const [size, setSize] = useState(0);
+ 
+// }
 
-      <main className="app-main">
-        <section className="app-left">
-          <Form size={size} setSize={setSize} review={review} write={writeReview} />
-        </section>
-        <section className="app-right">
-          <Preview size={size} review={review} />
-        </section>
-      </main>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      feedback: '',
+      party: 0,
+    }
+    this.updateInput = this.updateInput.bind(this);
+  }
+
+  updateInput(event) {
+    this.setState({
+      [event.target.name]: event.target.value,
+    })
+  }
+
+  render() {
+    const { feedback, party } = this.state;
+    return (
+      <div className="app">
+        <Header />
+  
+        <main className="app-main">
+          <section className="app-left">
+            <Form party={party} feedback={feedback} updateInput={this.updateInput} />
+          </section>
+          <section className="app-right">
+            <Preview party={party} feedback={feedback} />
+          </section>
+        </main>
+      </div>
+    );
+  }
 }
 
 export default App;

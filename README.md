@@ -24,6 +24,17 @@ Design Reference: [Figma File](https://www.figma.com/file/jjqRhIa54hOakjjAWkpbmC
 
     In your README doc, write a few sentences about why you might pick a certain direction. Feel free to copy the Figma file and test ideas visually. 
 
+Emoji Product Decision: 
+The Emoji input option that I am going with is the radio button input option. I am going with this option instead of the other ones for a variety reasons that I will list below. 
+  1. Use on mobile: Based off of later steps, and based off of general trends regarding applications and peoples increasing mobile use. Mobile browser interface considerations are something that must be taken into account when designing and building out the functions of an application. Dropdown Selectors and Full Emoji Picker options would be more difficult to use on mobile especially if it was through a web application. 
+
+  2. Too many options to choose from?: When considering an Emoji Picker I believe we should provide enough options for the users but not too many options. If we provided too many options it may cause indecisiveness in some users and general disinterest in using emojis if deciding on which emoji to use is taking too much time and effort. Also when a user is reading reviews if the emoji options are all over the place the users who are reading the reviews may get confused. 
+
+  3. Consumer ease of use: When picking the emoji that they want to use for their review, the consumer should not feel fatigued from having to navigate between too many emoji choice windows and should be able to quickly determine which emoji to use with the idea they have in mind. 
+
+Solution: I will be using radio button input option, but adding a category option to group emoji's by categories that way the user will have a good variety of choices to choose from, but it won't be too many options. Also I believe this option will translate over to ease of use on both computers and mobile and when the user decides to choose an emoji they will have an easier time deciding the right emoji to use. 
+
+
 4. **Add emoji selector** - Now implement your idea in code and render it on the right in the Preview section.
 5. **Style preview card** - Based on the [Figma File](https://www.figma.com/file/jjqRhIa54hOakjjAWkpbmC/Take-home-frontend-test?node-id=0%3A1), add CSS styling to the Preview area. In Figma you can click the "Code" tab in the upper right to get the relevant CSS values for each element you click.
 6. **Responsive styling** - Now that your Preview is looking good, we need to make the app work for mobile users. We'd like the Preview section to be on top in mobile and everything to look similar to the Figma mockup. Don't worry about tablet styling for now, this is just for mobile.

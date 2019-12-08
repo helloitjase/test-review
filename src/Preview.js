@@ -11,9 +11,9 @@ function Preview(props) {
           {emoji}
         </div>
         <div className="preview-feedback">
-          Let us know what we did well or could improve...
+          
           <div>
-            {feedback}
+            {feedback === '' ? <span>Let us know what we did well or could improve...</span> : feedback}
           </div>
         </div>
         <div className="preview-party">

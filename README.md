@@ -32,7 +32,7 @@ The Emoji input option that I am going with is the radio button input option. I 
 
   3. Consumer ease of use: When picking the emoji that they want to use for their review, the consumer should not feel fatigued from having to navigate between too many emoji choice windows and should be able to quickly determine which emoji to use with the idea they have in mind. 
 
-Solution: I will be using radio button input option, but adding a category option to group emoji's by categories that way the user will have a good variety of choices to choose from, but it won't be too many options. Also I believe this option will translate over to ease of use on both computers and mobile and when the user decides to choose an emoji they will have an easier time deciding the right emoji to use. 
+Solution: I will be using radio button input option I believe this option will translate over to ease of use on both computers and mobile and when the user decides to choose an emoji they will have an easier time deciding the right emoji to use. 
 
 
 4. **Add emoji selector** - Now implement your idea in code and render it on the right in the Preview section.

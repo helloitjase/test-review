@@ -4,12 +4,6 @@ import Header from './Header.js';
 import Form from './Form.js';
 import Preview from './Preview.js';
 
-// function App() {
-//   const [review, writeReview] = useState('');
-//   const [size, setSize] = useState(0);
- 
-// }
-
 class App extends React.Component {
   constructor(props) {
     super(props);

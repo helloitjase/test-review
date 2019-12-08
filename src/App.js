@@ -10,6 +10,7 @@ class App extends React.Component {
     this.state = {
       feedback: '',
       party: 0,
+      emoji: '',
     }
     this.updateInput = this.updateInput.bind(this);
   }
@@ -21,17 +22,17 @@ class App extends React.Component {
   }
 
   render() {
-    const { feedback, party } = this.state;
+    const { feedback, party, emoji } = this.state;
     return (
       <div className="app">
         <Header />
   
         <main className="app-main">
           <section className="app-left">
-            <Form party={party} feedback={feedback} updateInput={this.updateInput} />
+            <Form emoji={emoji} party={party} feedback={feedback} updateInput={this.updateInput} />
           </section>
           <section className="app-right">
-            <Preview party={party} feedback={feedback} />
+            <Preview emoji={emoji} party={party} feedback={feedback} />
           </section>
         </main>
       </div>

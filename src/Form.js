@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Form.css';
 
 function Form(props) {
-  const { updateInput, feedback, party } = props;
+  const { emoji, updateInput, feedback, party } = props;
   
   return (
     <div className="form">
@@ -27,11 +27,32 @@ function Form(props) {
 
       <label className="form-label">How was your meal?</label>
       <div>
-
-        *** Add Emoji selector ***
-        {/* Your Code goes here */}
-
+       <label>
+         <input onChange={updateInput} name="emoji" type="radio" value="😍" checked={emoji === '😍'} />
+         Excellent 😍
+       </label>
+       <label>
+         <input onChange={updateInput} name="emoji" type="radio" value="😄" checked={emoji === '😄'}/>
+         Great 😄
+       </label>
+       <label>
+         <input onChange={updateInput} name="emoji" type="radio" value="😊" checked={emoji === '😊'}/>
+         Good 😊
+       </label>
+       <label>
+         <input onChange={updateInput} name="emoji" type="radio" value="😐" checked={emoji === '😐'}/>
+         Okay 😐
+       </label>
+       <label>
+         <input onChange={updateInput} name="emoji" type="radio" value="🙁" checked={emoji === '🙁'}/>
+         Below Standards 🙁
+       </label>
+       <label>
+         <input onChange={updateInput} name="emoji" type="radio" value="🤢" checked={emoji === '🤢'}/>
+         Far Below Standards 🤢
+       </label>
       </div>
+
     </div>
   );
 }

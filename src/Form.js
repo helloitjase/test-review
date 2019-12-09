@@ -30,37 +30,37 @@ function Form(props) {
         <div className="form-emoji">
          <label>
            <input onChange={updateInput} name="emoji" type="radio" value="😍" checked={emoji === '😍'} />
-           Excellent 😍
+           &nbsp;Excellent 😍
          </label>
         </div>
         <div className="form-emoji">
         <label>
           <input onChange={updateInput} name="emoji" type="radio" value="😄" checked={emoji === '😄'}/>
-          Great 😄
+          &nbsp;Great 😄
         </label>
         </div>
        <div className="form-emoji">
         <label>
           <input onChange={updateInput} name="emoji" type="radio" value="😊" checked={emoji === '😊'}/>
-          Good 😊
+          &nbsp;Good 😊
         </label>
        </div>
        <div className="form-emoji">
         <label>
           <input onChange={updateInput} name="emoji" type="radio" value="😐" checked={emoji === '😐'}/>
-          Okay 😐
+          &nbsp;Okay 😐
         </label>
        </div>
        <div className="form-emoji">
         <label>
           <input onChange={updateInput} name="emoji" type="radio" value="🙁" checked={emoji === '🙁'}/>
-          Below Standards 🙁
+          &nbsp;Below Standards 🙁
         </label>
        </div>
        <div className="form-emoji">
         <label>
           <input onChange={updateInput} name="emoji" type="radio" value="🤢" checked={emoji === '🤢'}/>
-          Far Below Standards 🤢
+          &nbsp;Far Below Standards 🤢
         </label>
        </div>
       </div>

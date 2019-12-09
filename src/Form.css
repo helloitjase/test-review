@@ -47,7 +47,7 @@
 
   .form-label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     margin-left: 4.26%;
   }
   .form-text-label-mobile {
@@ -63,7 +63,7 @@
     background: rgba(222, 237, 247, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     width: 89.33%;
   }
 
@@ -75,7 +75,7 @@
   background: rgba(222, 237, 247, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-emoji {

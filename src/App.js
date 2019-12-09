@@ -9,7 +9,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       feedback: '',
-      party: 0,
+      party: 2,
       emoji: '😍',
     }
     this.updateInput = this.updateInput.bind(this);

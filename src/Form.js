@@ -6,7 +6,7 @@ function Form(props) {
   
   return (
     <div className="form">
-      <label className="form-label">Your feedback</label>
+      <label className="form-label form-text-label-mobile">Your feedback</label>
       <textarea className="form-textarea"
         name="feedback"
         rows="4"

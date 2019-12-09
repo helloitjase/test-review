@@ -21,3 +21,19 @@
   background: #F8FBFD;
   min-height: 80vh;
 }
+
+@media screen and (max-width: 480px) {
+  .app-main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .app-left {
+    display: flex;
+    justify-content: center;
+  }
+  .app-right {
+    display: flex;
+    justify-content: center;
+    background: #F8FBFD;
+  }
+}

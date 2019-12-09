@@ -8,16 +8,17 @@ function Preview(props) {
       <div className="preview-label">Preview of your review</div>
       <div className="preview-content">
         <div className="preview-emoji">
-          {emoji}
+          <div className="preview-emoji-box">
+              {emoji}
+          </div>
         </div>
         <div className="preview-feedback">
-          
           <div>
-            {feedback === '' ? <span>Let us know what we did well or could improve...</span> : feedback}
+            {feedback === '' ? <span className="preview-filler">Let us know what we did well or could improve...</span> : feedback}
           </div>
         </div>
         <div className="preview-party">
-         {party} people dined here.
+          <span className="preview-party-number">{party}</span> people dined here.
         </div>
       </div>
     </section>

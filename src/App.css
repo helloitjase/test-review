@@ -35,5 +35,6 @@
     display: flex;
     justify-content: center;
     background: #F8FBFD;
+    min-height: 49.8vh;
   }
 }

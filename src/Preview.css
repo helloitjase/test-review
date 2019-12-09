@@ -71,12 +71,13 @@
   .preview {
     position: absolute;
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 1.9375rem;
+    margin-bottom: 1.6875rem;
     background-color: #F8FBFD;
   }
 
   .preview-content {
-    width: 85%;
+    width: 89.33%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -84,4 +85,21 @@
     box-shadow: 0px 30px 80px rgba(134, 158, 184, 0.15);
     background-color: #FFFFFF;
   }
+  .preview-label {
+    display: block;
+    margin-left: 5.33%;
+    margin-bottom: 0.9375rem;
+  }
+  .preview-feedback {
+    width: 18rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    font-family: Roboto;
+    box-sizing: border-box;
+    margin-top: 1rem;
+  }
+  .preview-filler {
+    color: rgba(0, 0, 0, 0.25);
+    width: 100%;
+  }  
 }
